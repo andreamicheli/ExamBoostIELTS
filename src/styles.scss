@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "mixsin";
+
+:root {
+  --color-primary: #003366;
+  --color-secondary: #99cc33;
+  --color-background: #cccccc;
+  --color-against: #333333;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
