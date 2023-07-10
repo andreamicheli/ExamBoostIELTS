@@ -1,1 +1,8 @@
-<button class="button-19" role="button" (click)="click()">{{ testo }}</button>
+<button
+  class="button-19"
+  role="button"
+  (click)="click()"
+  [ngClass]="{ primary: color === 'primary', secondary: color === 'secondary' }"
+>
+  {{ testo }}
+</button>

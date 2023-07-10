@@ -18,8 +18,7 @@
 }
 
 .button-19 {
-  appearance: button;
-  background-color: color(primary);
+  // appearance: button;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -28,11 +27,9 @@
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
-  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 20px;
   margin: 0;
+  background-color: color(primary);
   outline: none;
   overflow: visible;
   padding: 13px 16px;
@@ -45,12 +42,24 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 100%;
+  // width: 100%;
+  &.primary {
+    background-color: color(primary);
+    &:after {
+      background-color: color(tertiary);
+    }
+  }
+  &.secondary {
+    background-color: rgb(0, 100, 0);
+    &:after {
+      background-color: color(secondary);
+    }
+  }
 }
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #1cb0f6;
+  background-color: color(tertiary);
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -75,4 +84,15 @@
 
 .button-19:disabled {
   cursor: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-19 {
+    font-size: 9px;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  .button-19:after {
+    border-radius: 10px;
+  }
 }

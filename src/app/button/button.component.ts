@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() testo: string = 'button';
+  @Input() color: string = 'primary';
   @Input() click: () => any = () => null;
 }

@@ -1,0 +1,27 @@
+@import "../../mixsin.scss";
+
+textarea {
+  width: 550px;
+  height: 30vh;
+
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid color(against) 1px;
+  padding: 1em;
+  font-weight: 100;
+}
+:focus {
+  border-color: color(secondary);
+}
+
+@media only screen and (max-width: 800px) {
+  textarea {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 300px;
+  }
+}
